@@ -1,5 +1,5 @@
 cask "zed" do
-  version "latest"
+  version :latest
   sha256 :no_check
 
   url "https://github.com/kapten-hwacha/zed/releases/download/latest-math/Zed-aarch64.dmg"
@@ -7,8 +7,8 @@ cask "zed" do
   desc "Multiplayer code editor with native LaTeX math rendering in markdown"
   homepage "https://github.com/kapten-hwacha/zed"
 
-  auto_updates true
   depends_on arch: :arm64
+  depends_on :macos
 
   app "Zed.app"
   binary "#{appdir}/Zed.app/Contents/MacOS/cli", target: "zed"
