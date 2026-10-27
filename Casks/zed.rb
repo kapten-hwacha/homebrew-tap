@@ -1,6 +1,6 @@
 cask "zed" do
-  version :latest
-  sha256 :no_check
+  version "1.25.3"
+  sha256 "f7011283d47f8c00df6b69fece2c332c6c3e55d30c6a8061ec81289f981d71f3"
 
   url "https://github.com/kapten-hwacha/zed/releases/download/latest-math/Zed-aarch64.dmg"
   name "Zed with LaTeX Math"
